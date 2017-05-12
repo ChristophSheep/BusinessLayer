@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Library.Attributes;
-using Library.Attributes.BaseAttributes;
+using Library.Attributes.Interfaces;
 
 namespace Business.Objects.BaseObjects
 {

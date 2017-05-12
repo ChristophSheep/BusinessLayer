@@ -4,7 +4,7 @@ using Business.Objects;
 
 namespace Business.Attributes
 {
-    public class SensorTypeAttribute : BaseAttribute<SensorType>
+    public class SensorTypeAttribute : BaseAttribute
     {
 
         public SensorTypeAttribute ()
@@ -12,6 +12,7 @@ namespace Business.Attributes
             Value = SensorType.Empty;
         }
 
+        public SensorType Value { get; set; }
 
     }
 }

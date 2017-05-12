@@ -7,25 +7,24 @@ using Business.Objects.BaseObjects;
 
 using Library;
 using Library.Attributes;
+using Library.Attributes.BaseAttributes;
 
 namespace Business.Objects
 {
     public class SensorChannel : BaseObject
     {
+        public static readonly SensorChannel Empty = new SensorChannel();
+
         public SensorTypeAttribute SensorType { get; }
         public BoolAttribute IsCalculated { get; }
-        public BoolAttribute IsDynamic { get;} // TODO Should be BoolAttribute
+        public BoolAttribute IsDynamic { get; } 
         protected virtual DateTimeValuePair CalcValue()
         {
-            return new DateTimeValuePair();
+            return DateTimeValuePair.Empty;
         }
         protected virtual List<DateTimeValuePair> CalcValues()
         {
-            var dateTimeValues = new List<DateTimeValuePair>();
-
-            // TODO
-
-            return dateTimeValues;
+            return new List<DateTimeValuePair>();
         }
         public DateTimeValuePair GetValue(DateTime at)
         {
@@ -51,6 +50,5 @@ namespace Business.Objects
                 return dateTimeValues;
             }
         }
-
     }
 }

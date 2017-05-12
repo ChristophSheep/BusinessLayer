@@ -3,16 +3,13 @@ using Library.Attributes.Interfaces;
 
 namespace Library.Attributes.BaseAttributes
 {
-    public class BaseAttribute<T> : Object, Library.Attributes.Interfaces.Attribute<T> 
+    public class BaseAttribute : Object, Library.Attributes.Interfaces.Attribute 
     {
         public BaseAttribute() 
         {
             HasValue = false;
         }
         public bool HasValue { get; set; }
-
-        public T Value { get; set; }
-
         public int AttributeTypeId 
         { 
             get => throw new NotImplementedException(); 
