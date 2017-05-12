@@ -28,9 +28,14 @@ namespace Business.Objects
         public virtual SensorChannel GetChannelByName(NameAttribute name)
         {
             var channels = GetChannels();
-            var foundChannel = channels.FirstOrDefault(channel => channel.Name == name);
+            
+            var foundChannel = channels.FirstOrDefault(channel => channel.Name.Equals(name));
+
             if (foundChannel == null)
-                return SensorChannel.Empty;
+            {
+                foundChannel = SensorChannel.Empty;
+            }
+
             return foundChannel;
         }
         public virtual DateTimeValuePair GetValue(SensorChannel sensorChannel, DateTime at)

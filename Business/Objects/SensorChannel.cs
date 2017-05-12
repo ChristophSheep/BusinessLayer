@@ -14,7 +14,6 @@ namespace Business.Objects
     public class SensorChannel : BaseObject
     {
         public static readonly SensorChannel Empty = new SensorChannel();
-
         public SensorTypeAttribute SensorType { get; }
         public BoolAttribute IsCalculated { get; }
         public BoolAttribute IsDynamic { get; } 
