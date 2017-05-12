@@ -1,0 +1,8 @@
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\Business\bin\Debug\netcoreapp1.1\Business.deps.json
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\Business\obj\Debug\netcoreapp1.1\Business.AssemblyInfo.cs
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\Business\bin\Debug\netcoreapp1.1\Business.dll
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\Business\bin\Debug\netcoreapp1.1\Business.pdb
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\Business\bin\Debug\netcoreapp1.1\Library.dll
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\Business\bin\Debug\netcoreapp1.1\Library.pdb
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\Business\obj\Debug\netcoreapp1.1\Business.dll
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\Business\obj\Debug\netcoreapp1.1\Business.pdb

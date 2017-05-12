@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+  </PropertyGroup>
+
+  
+  <ItemGroup>
+    <ProjectReference Include="..\Business\Business.csproj">
+      <Name>Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Library\Library.csproj">
+      <Name>Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+
+</Project>

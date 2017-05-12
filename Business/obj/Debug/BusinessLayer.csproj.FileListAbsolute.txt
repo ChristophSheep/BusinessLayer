@@ -1,0 +1,8 @@
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\BusinessLayer\BusinessLayer\bin\Debug\BusinessLayer.exe.config
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\BusinessLayer\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\BusinessLayer\BusinessLayer\bin\Debug\BusinessLayer.exe
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\BusinessLayer\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\BusinessLayer\BusinessLayer\bin\Debug\Library.exe
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\BusinessLayer\BusinessLayer\bin\Debug\Library.pdb
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\BusinessLayer\BusinessLayer\obj\Debug\BusinessLayer.exe
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\BusinessLayer\BusinessLayer\obj\Debug\BusinessLayer.pdb

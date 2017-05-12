@@ -1,0 +1,12 @@
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\BusinessLayer\Library\bin\Debug\Library.exe.config
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\BusinessLayer\Library\bin\Debug\Library.exe
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\BusinessLayer\Library\bin\Debug\Library.pdb
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\BusinessLayer\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\BusinessLayer\Library\obj\Debug\Library.exe
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\BusinessLayer\Library\obj\Debug\Library.pdb
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\Library\bin\Debug\Library.exe.config
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\Library\bin\Debug\Library.exe
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\Library\bin\Debug\Library.pdb
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\Library\obj\Debug\Library.csprojResolveAssemblyReference.cache
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\Library\obj\Debug\Library.exe
+C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\Library\obj\Debug\Library.pdb
