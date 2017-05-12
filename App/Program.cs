@@ -26,6 +26,19 @@ namespace App
             
             Console.WriteLine($"Name: {name:Name}");
 
+            var boolean = BoolAttribute.Empty;
+
+            Console.WriteLine("boolean = BoolAttribute.Empty");
+
+            if (boolean.HasValue)
+            {
+                Console.WriteLine($"boolean.HasValue: {boolean.HasValue}");
+            } 
+            else
+            {
+                Console.WriteLine($"boolean.HasValue: {boolean.HasValue}");
+            }
+
             Console.WriteLine();
             Console.Write("Hit <enter> to exit.");
             Console.ReadLine();

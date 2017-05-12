@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using Library.Attributes;
+using Library.Attributes.BaseAttributes;
 
 namespace Business.Objects.BaseObjects
 {
@@ -44,10 +45,9 @@ namespace Business.Objects.BaseObjects
 
         public TypeAttribute Type { get; set; }
 
+        public List<Attribute> Attributes { get; set; }
 
-        public List<BaseAttribute> Attributes { get; set; }
-
-        public List<BaseAttribute> AdditionalAttributes { get; set; } 
+        public List<Attribute> AdditionalAttributes { get; set; } 
 
     }
 

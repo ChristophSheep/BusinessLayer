@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
+
 using Business.Objects.BaseObjects;
+using Business.Attributes;
+
 using Library;
 using Library.Attributes;
 
@@ -8,15 +11,21 @@ namespace Business.Objects
 {
     public class Sensor : BaseObjectWithGeometry
     {
+        public SensorTypeAttribute SensorType { get; }
+
         public virtual List<SensorChannel> GetChannels()
         {
             var sensorChannels = new List<SensorChannel>();
 
-            // TODO: 
-            // Get channels of sensorType
-            // If channels are dynamic you also return them also
+            if (SensorType.HasValue == false)
+            {
+                return sensorChannels;
+            }
 
-            return sensorChannels;
+            var sensorType = SensorType.Value;
+            return sensorChannels.GetChannelsByType(sensorType);
+
+
         }
 
         public virtual SensorChannel GetChannelByName(NameAttribute name)
