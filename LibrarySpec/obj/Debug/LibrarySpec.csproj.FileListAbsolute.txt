@@ -1,8 +1,0 @@
-C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\LibrarySpec\bin\Debug\LibrarySpec.exe.config
-C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\LibrarySpec\bin\Debug\LibrarySpec.exe
-C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\LibrarySpec\bin\Debug\LibrarySpec.pdb
-C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\LibrarySpec\bin\Debug\Library.exe
-C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\LibrarySpec\bin\Debug\Library.pdb
-C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\LibrarySpec\bin\Debug\Library.exe.config
-C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\LibrarySpec\obj\Debug\LibrarySpec.exe
-C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\Clean Examples\BusinessLayer\LibrarySpec\obj\Debug\LibrarySpec.pdb

@@ -22,6 +22,12 @@ namespace App
             cmd.Execute();
             cmd.Undo();
 
+            var name = new NameAttribute() {Name = "FooBarr"};
+            
+            Console.WriteLine($"Name: {name:Name}");
+
+            Console.WriteLine();
+            Console.Write("Hit <enter> to exit.");
             Console.ReadLine();
         }
     }
