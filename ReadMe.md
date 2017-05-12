@@ -34,3 +34,13 @@
 Visual Studio Code has built in Git support, but very few know how to use it on OSX with GitHub. Even in the official docs, there is only a few paragraphs on it. In this post, I’ll show you how I set it up.
 
 [Setting up Github with Visual Studio Code on OSX](http://michaelcrump.net/using-github-with-visualstudio-code/)
+
+### Setup Portable Git
+
+set gitdir=C:\Users\Christoph.Reif\Desktop\Clean_UncleanCode\PortableGit
+set path=%gitdir%\cmd;%path%
+
+### Checkin First Time
+
+git remote add origin https://github.com/MySheep/BusinessLayer.git
+git push -u origin master
