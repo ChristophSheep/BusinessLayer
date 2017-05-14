@@ -10,7 +10,7 @@ using Business.Attributes;
 
 namespace Business.Objects
 {
-    public /*abstract*/ class Sensor : BaseObjectWithGeometry
+    public /*abstract*/ class Sensor : ObjectWithGeometry
     {
 
         public static Sensor Create(Sensor prototype, IdAttribute id, NameAttribute name, ParentIdAttribute parentId)

@@ -3,10 +3,8 @@ using Library.Attributes.BaseAttributes;
 
 namespace Library.Attributes
 {
-    public class NameAttribute : Attribute
+    public class NameAttribute : Attribute, BaseAttribute
     {
-        public string Name { get; set; }
-        
-        public string LocalizedName { get; set; } // TODO: CurrentCultureInfo -> en-en, de-de, de-at
+        public string Value { get; set; }
     }
 }

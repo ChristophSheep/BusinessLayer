@@ -2,8 +2,8 @@
 
 namespace Library.Attributes
 {
-    public class TypeAttribute : Attribute
+    public class TypeAttribute : Attribute, BaseAttribute
     {
-        public string Type { get; set; }
+        public string Value { get; set; }
     }
 }
