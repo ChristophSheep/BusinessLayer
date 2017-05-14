@@ -43,6 +43,8 @@ e.g.
 - Sensor "3D_123"
     - ProtoType.GetChannels();
 
+A sensor prototype exists only one time.
+
 Sensor is an abstract class. the whole code works with this class.
 
 There are never should be any cast to concrete sensor (e.g. Sensor_3D)

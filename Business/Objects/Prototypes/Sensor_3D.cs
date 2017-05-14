@@ -11,8 +11,9 @@ namespace Business.Objects
 
             var channel_xy = new SensorChannel_3D_XY()
             {
-                Name = "3D_XY";
-            }
+                Name.Value = "3D_XY",
+                Id.Valie = 1,
+            };
 
             Channels.Add(channel_xy);
         }

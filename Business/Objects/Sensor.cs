@@ -10,51 +10,53 @@ using Business.Attributes;
 
 namespace Business.Objects
 {
-    public abstract class Sensor : BaseObjectWithGeometry
+    public /*abstract*/ class Sensor : BaseObjectWithGeometry
     {
 
-        // This is not necessary
-        // public SensorTypeAttribute SensorType { get; }
-
-        public abstract List<SensorChannel> GetChannels()
+        public static Sensor Create(Sensor prototype, IdAttribute id, NameAttribute name, ParentIdAttribute parentId)
         {
-            /* 
-            var sensorChannels = new List<SensorChannel>();
+            var newSensor = new Sensor(prototype); 
 
-            if (SensorType.HasValue)
-            {
-                var sensorType = SensorType.Value;
-                sensorChannels = SensorChannels.GetChannelsByType(sensorType);
-            }
-
-            return sensorChannels;
-            */
+            newSensor.IdAttribute.Value = id;
+            newSensor.NameAttribute.Value = name;
+            newSensor.ParentId = IdAttribute.Empty; // Root
         }
 
-        public abstract SensorChannel GetChannelByName(NameAttribute name)
+        public static Sensor Create(Sensor prototype, List<Attribute> parameters)
         {
-            /* 
-            var channels = GetChannels();
-            
-            var foundChannel = channels.FirstOrDefault(channel => channel.Name.Equals(name));
+            var newSensor = new Sensor(prototype);  
 
-            if (foundChannel == null)
+            foreach (var param in parameters)
             {
-                foundChannel = SensorChannel.Empty;
+                newSensor.SetAttributeValue(param);
             }
+        }
 
-            return foundChannel;
-            */
+        protected Sensor(Sensor prototype) 
+        {
+            Prototype = prototype;
+        }
+
+        protected Sensor Prototype = new EmptySensor();
+
+        public virtual List<SensorChannel> GetChannels()
+        {
+            return prototype.GetChannels();
+        }
+
+        public virtual SensorChannel GetChannelByName(NameAttribute name)
+        {
+            return prototype.GetChannelByName(name);
         }
         
         public virtual DateTimeValuePair GetValue(SensorChannel sensorChannel, DateTime at)
         {
-            return sensorChannel.GetValue(at);
+            return prototype.GetValue(sensorChannel, at);
         }
 
         public virtual List<DateTimeValuePair> GetValues(SensorChannel sensorChannel, DateTime from, DateTime to)
         {
-            return sensorChannel.GetValues(from, to);
+            return prototype.GetValues(sensorChannel, from, to);
         }
     }
 }
