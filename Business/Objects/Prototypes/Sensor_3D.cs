@@ -1,29 +1,82 @@
 namespace Business.Objects
 {
-    public class Sensor_3D : Sensor
+    public class Sensor_3D : PrototypeSensor, Sensor 
     {
-        // New sensor can only be created by copying the prototype sensor
+        protected static bool created = false;
+
+        protected static Sensor sensorSingleton;
+
+        public Sensor CreatePrototype()
+        {
+            if (created == false) 
+            {
+                sensorSingleton = new Sensor3D(); created = true;
+            }
+
+            return sensorSingleton;
+        }
 
         protected Sensor_3D()
         {
             Name.Value = "3D";
-            Id.Value = 1;
+            Id.Value = 1000;        // Should be a unique id similar to a GUID - Get Number from Registrar office
+            ParentId.Value = -1;    // Has no parent is a prototype
 
-            var channel_xy = new SensorChannel_3D_XY()
-            {
-                Name.Value = "3D_XY",
-                Id.Valie = 1,
-            };
+            // Create BuiltIn channels
+            
+            var channel_x  = SensorChannel_3D_X.Create(this);
+            var channel_y  = SensorChannel_3D_Y.Create(this);
+            var channel_xy = SensorChannel_3D_XY.Create(this);
 
-            Channels.Add(channel_xy);
+            AddChannel(channel_x);
+            AddChannel(channel_y);
+            AddChannel(channel_xy);
+
         }
 
-        // This class could be loaded at runtime
-
-        private class SensorChannel_3D_XY : SensorChannel
+        protected class SensorChannel_3D_X : SensorChannel
         {
-            List<DateTimeValuePair> GetValues(DateTime from, DateTime to)
+            public SensorChannel_3D_X ()
             {
+                Name.Value = "3D_X",
+                Id.Value = 10000001,
+            }
+
+            public List<DateTimeValuePair> GetValues(DateTime from, DateTime to)
+            {
+                var values = Storage.GetChannelValues(this, from, to);
+                return values;
+            }
+        }
+
+        protected class SensorChannel_3D_Y : SensorChannel
+        {
+            public SensorChannel_3D_Y ()
+            {
+                Name.Value = "3D_Y";
+                Id.Value = 10000002, 
+            }
+
+            public List<DateTimeValuePair> GetValues(DateTime from, DateTime to)
+            {
+                var values = Storage.GetChannelValues(this, from, to);
+                return values;
+            }
+        }
+
+        protected class SensorChannel_3D_XY : SensorChannel
+        {
+            public SensorChannel_3D_XY()
+            {
+                Name.Value = "3D_XY";
+                Id.Value = 10000003,
+            }
+
+            public override List<DateTimeValuePair> GetValues(DateTime from, DateTime to)
+            {
+                // Get the values from Storage for x and y channel
+                // and calculate the xy value by xy is sqrt(x^2 + y^2)
+
                 var values = new List<DateTimeValuePair>();
 
                 var channel_x = GetChannel("3D_X");
@@ -44,8 +97,5 @@ namespace Business.Objects
                 return values;
             }
         }
-
     }
-
-    
 }
