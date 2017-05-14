@@ -2,7 +2,9 @@
 
 namespace Library.Commands
 {
-    // ReSharper disable once InconsistentNaming
+    
+    // Interface vs. abstract base class
+
     public interface Command
     {
         bool CanExecute();

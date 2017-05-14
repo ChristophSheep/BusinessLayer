@@ -2,7 +2,7 @@
 
 namespace Library.Attributes
 {
-    public class TypeAttribute : BaseAttribute
+    public class TypeAttribute : Attribute
     {
         public string Type { get; set; }
     }

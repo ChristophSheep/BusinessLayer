@@ -2,7 +2,7 @@ using System;
 
 namespace Library.Commands
 {
-    public abstract class BaseCommand: Command
+    public abstract class BaseCommand : Command
     {
         public virtual bool CanExecute()
         {

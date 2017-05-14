@@ -2,9 +2,10 @@ using Library;
 
 namespace Business.Objects.BaseObjects
 {
-    public class BaseObjectWithGeometry : BaseObject
+    public abstract class ObjectWithGeometry : BaseObject
     {
-        protected BaseObjectWithGeometry() { }
+        protected ObjectWithGeometry() { }
+
         public Geometry Geometry { get; set; }
     }
 }

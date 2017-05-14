@@ -3,7 +3,7 @@
 namespace Library.Attributes
 {
 
-    public class IdAttribute : BaseAttribute
+    public class IdAttribute : Attribute
     {
         public int Id { get; set; }
     }

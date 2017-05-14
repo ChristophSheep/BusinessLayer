@@ -11,43 +11,12 @@ using Library.Attributes.BaseAttributes;
 
 namespace Business.Objects
 {
-    public class SensorChannel : BaseObject
+    public abstract class SensorChannel : Library.Objects.Object
     {
         public static readonly SensorChannel Empty = new SensorChannel();
-        public SensorTypeAttribute SensorType { get; }
-        public BoolAttribute IsCalculated { get; }
-        public BoolAttribute IsDynamic { get; } 
-        protected virtual DateTimeValuePair CalcValue()
-        {
-            return DateTimeValuePair.Empty;
-        }
-        protected virtual List<DateTimeValuePair> CalcValues()
-        {
-            return new List<DateTimeValuePair>();
-        }
-        public DateTimeValuePair GetValue(DateTime at)
-        {
-            if (IsCalculated.HasValue && IsCalculated.Value)
-            {
-                return CalcValue();
-            }
-            else
-            {
-                return new DateTimeValuePair();
-            } 
-        }
-        public List<DateTimeValuePair> GetValues(DateTime from, DateTime to)
-        {
-            if (IsCalculated.Value)
-            {
-                return CalcValues();
-            }
-            else
-            {
-                var dateTimeValues = new List<DateTimeValuePair>();
-
-                return dateTimeValues;
-            }
-        }
+        
+        public abstract DateTimeValuePair GetValue(DateTime at);
+      
+        public abstract List<DateTimeValuePair> GetValues(DateTime from, DateTime to)
     }
 }

@@ -1,16 +1,15 @@
 
 using Library.Attributes.BaseAttributes;
-using Library.Attributes.Interfaces;
 
 namespace Library.Attributes
 {
-    public class BoolAttribute : BaseAttribute
+    public class BoolAttribute : Attribute
     {
-        public static readonly BoolAttribute Empty = new BoolAttribute() 
-        { 
-            HasValue = false 
-        };
-
+        public static readonly BoolAttribute Empty = new BoolAttribute();
+        
         public bool Value {get; set;}
+        
+        // public bool HasValue { get; set; }
+
     }
 }
